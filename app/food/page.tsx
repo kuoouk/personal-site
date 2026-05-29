@@ -8,14 +8,17 @@ const restaurants = [
   {
     name: "龚二姐湖南菜馆",
     location: "北京",
+    note: ""，
   },
   {
     name: "Ktoy",
     location: "北京",
+    note: ""，
   },
   {
     name: "懒人盐府",
     location: "北京",
+    note: ""，
   },
   
 ];
