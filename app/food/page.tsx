@@ -26,7 +26,7 @@ export default function Food() {
     <>
       <Nav />
       <p className="mb-12" style={{ color: "var(--color-ink-muted)" }}>
-        填饱胃袋好比滋养心灵。
+        填饱胃袋，好比滋养心灵。
       </p>
 
       <ul className="space-y-5 list-disc pl-5">
