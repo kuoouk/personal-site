@@ -8,7 +8,7 @@ export function Footer() {
       }}
     >
       <div className="flex flex-wrap justify-between gap-4">
-        <span>© {new Date().getFullYear()} 海峰</span>
+        <span>© {new Date().getFullYear()} </span>
         <span className="flex gap-4">
           <a href="/feed.xml">RSS</a>
         </span>
