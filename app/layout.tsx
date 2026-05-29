@@ -34,7 +34,7 @@ export default function RootLayout({
       <body>
         <div className="flex min-h-screen flex-col md:flex-row">
           {/* 左侧正文 */}
-          <main className="flex-1 px-6 py-10 md:px-12 md:py-16 md:order-1">
+          <main className="flex-1 px-6 py-10 md:px-12 md:py-16 order-2 md:order-1">
           <div className="mx-auto" style={{ maxWidth: "var(--measure)" }}>
               {children}
             </div>
@@ -42,9 +42,9 @@ export default function RootLayout({
 
           {/* 右侧栏 */}
           <aside
-            className="shrink-0 px-6 py-10 md:order-2 md:w-56 md:py-16 md:pr-10"
-            style={{ borderLeft: "1px solid var(--color-line)" }}
-          >
+  className="shrink-0 px-6 py-10 order-1 md:order-2 md:w-56 md:py-16 md:pr-10 border-b md:border-l md:border-b-0"
+  style={{ borderColor: "var(--color-line)" }}
+>
             <div className="md:sticky md:top-16">
                 <h1 className="text-xl mb-1" style={{ fontWeight: 500 }}>
                   海峰
