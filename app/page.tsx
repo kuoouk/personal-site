@@ -1,53 +1,56 @@
-import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
-import { getAllPosts } from "@/lib/content";
-import { format } from "date-fns";
 
-export default function HomePage() {
-  const recentPosts = getAllPosts().slice(0, 5);
 
+export default function About() {
   return (
     <>
       <Nav />
+      <img
+        src="/avatar.jpg"
+        alt="Michael"
+        width={120}
+        height={120}
+        style={{
+          width: 120,
+          height: 120,
+          objectFit: "cover",
+          marginBottom: "1.5rem",
+        }}
+      />
+      <article className="prose-article">
+        <p>
+          2026-至今：Primilab，创始人&CEO，通过AI构建新的内容范式<br/>
+          2015-2025：字节跳动，参与了今日头条、头条搜索、飞聊、金字节<br/>
+          2013-2015：PingWest，记者<br/>
+          2009-2013：人民大学，应用数学系<br/>
+        </p>
+        <p>
+        目前主要focus在两个项目：<br/>
+        - <a href="/works">汽泡/Primi</a>，基于AI抠图的记录和创作社区；<br/>
+        - <a href="/works">动物心情</a>，demo中。<br/>
+        </p>
+        <p>
+          对以下事情感兴趣：<br/>
+          - AI：对生产力的提升<br/>
+          - 商业：组织的构建和经营<br/>
+          - 社区：网络的构建和经营<br/>
+          - 运动：网球、健身、羽毛球<br/>
+          - 心理学：认知、情绪、行为<br/>
+          - 美食：探店、烹饪、品鉴<br/>
+          欢迎coffee chat，对以上任何话题都感兴趣。
+        </p>
+        <p>
+          长期招聘<a href="https://www.primilab.com/jobs/" target="_blank" rel="noreferrer">产品经理&工程师</a>。
+        </p>
 
+        
 
-      <section className="mb-12">
-        <h2 className="text-sm mb-4" style={{ color: "var(--color-ink-muted)" }}>
-          近期博客
-        </h2>
-        <ul className="space-y-2">
-          {recentPosts.map((p) => (
-            <li key={p.slug} className="flex justify-between gap-4">
-              <Link href={`/blog/${p.slug}`} className="flex-1">
-                {p.title}
-              </Link>
-              <span
-                className="font-en text-sm shrink-0"
-                style={{ color: "var(--color-ink-muted)" }}
-              >
-                {format(new Date(p.date), "yyyy.MM.dd")}
-              </span>
-            </li>
-          ))}
-        </ul>
-        <Link href="/blog" className="text-sm mt-4 inline-block" style={{ color: "var(--color-ink-muted)" }}>
-          查看全部 →
-        </Link>
-      </section>
-
-      <section className="mb-12">
-        <h2 className="text-sm mb-4" style={{ color: "var(--color-ink-muted)" }}>
-          主题页面
-        </h2>
-        <ul className="space-y-1.5">
-          <li><Link href="/works">作品</Link> — 百兽志、Primi、早期项目</li>
-          <li><Link href="/reading">在读</Link> — 最近在看的书</li>
-          <li><Link href="/notes">札记</Link> — 短想法、引用、链接</li>
-          <li><Link href="/about">关于</Link> — 更长的自我介绍</li>
-        </ul>
-      </section>
-
+        <p>
+          邮箱：<a href="mailto:guohaifeng@primilab.com">guohaifeng@primilab.com</a>。<br />
+        </p>
+      
+      </article>
       <Footer />
     </>
   );

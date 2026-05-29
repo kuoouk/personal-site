@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 const navLinks = [
-  { href: "/about", label: "关于" },
+  { href: "/", label: "关于" },
   { href: "/blog", label: "写作" },
   { href: "/reading", label: "书单" },
   { href: "/food", label: "美食" },
@@ -44,29 +44,27 @@ export default function RootLayout({
             style={{ borderColor: "var(--color-line)" }}
           >
             <div className="md:sticky md:top-16">
-            <div className="flex flex-wrap items-baseline gap-x-6 gap-y-3 md:block">
-  <div className="flex items-baseline gap-x-2 md:block">
-    <Link href="/" className="no-underline">
-      <h1 className="text-xl" style={{ fontWeight: 500 }}>
-        海峰
-      </h1>
-    </Link>
-    <p className="text-sm md:mt-1 md:mb-8" style={{ color: "var(--color-ink-muted)" }}>
-      builder
-    </p>
-  </div>
-  <nav>
-    <ul className="flex flex-wrap gap-x-4 gap-y-2 md:flex-col md:gap-x-0 md:gap-y-3 text-sm">
-      {navLinks.map((l) => (
-        <li key={l.href}>
-          <Link href={l.href} className="no-underline hover:underline">
-            {l.label}
-          </Link>
-        </li>
-      ))}
-    </ul>
-  </nav>
-</div>
+              <div className="flex flex-wrap items-baseline gap-x-6 gap-y-3 md:block">
+                <div className="flex items-baseline gap-x-2 md:block">
+                  <h1 className="text-xl" style={{ fontWeight: 500 }}>
+                    海峰
+                  </h1>
+                  <p className="text-sm md:mt-1 md:mb-8" style={{ color: "var(--color-ink-muted)" }}>
+                    builder
+                  </p>
+                </div>
+                <nav>
+                  <ul className="flex flex-wrap gap-x-4 gap-y-2 md:flex-col md:gap-x-0 md:gap-y-3 text-sm">
+                    {navLinks.map((l) => (
+                      <li key={l.href}>
+                        <Link href={l.href} className="no-underline hover:underline">
+                          {l.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </nav>
+              </div>
             </div>
           </aside>
         </div>
