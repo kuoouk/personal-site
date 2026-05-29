@@ -16,7 +16,6 @@ const restaurants = [
   {
     name: "懒人盐府",
     location: "北京",
-    note: "自贡菜。",
   },
   
 ];
