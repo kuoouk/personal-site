@@ -35,8 +35,8 @@ export default function RootLayout({
       <body>
         <div className="flex min-h-screen flex-col md:flex-row">
           <main className="flex-1 px-6 py-10 md:px-12 md:py-16 order-2 md:order-1">
-            <div className="ml-auto" style={{ maxWidth: "var(--measure)" }}>
-              {children}
+<div style={{ maxWidth: "var(--measure)", marginLeft: "4rem" }}>
+  {children}
             </div>
           </main>
           <aside
