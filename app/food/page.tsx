@@ -8,12 +8,10 @@ const restaurants = [
   {
     name: "龚二姐湖南菜馆",
     location: "北京",
-    note: "常德菜。老板的妈妈姓龚。",
   },
   {
     name: "Ktoy",
     location: "北京",
-    note: "烧鸟店。Page One旁边。",
   },
   {
     name: "懒人盐府",
