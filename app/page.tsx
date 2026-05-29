@@ -2,36 +2,51 @@ import Link from "next/link";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { getAllPosts } from "@/lib/content";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import { format } from "date-fns";
-import remarkGfm from "remark-gfm";
 
-export const metadata = { title: "博客" };
-
-export default function BlogIndex() {
-  const posts = getAllPosts();
+export default function HomePage() {
+  const recentPosts = getAllPosts().slice(0, 5);
 
   return (
     <>
       <Nav />
-      <h1 className="text-2xl mb-12" style={{ fontWeight: 500 }}>博客</h1>
 
-      {posts.map((p) => (
-        <article key={p.slug} className="prose-article mb-16">
-          <h2 style={{ marginTop: 0 }}>{p.title}</h2>
-          <p className="font-en text-sm" style={{ color: "var(--color-ink-muted)", marginTop: "-0.5rem" }}>
-            {format(new Date(p.date), "yyyy-MM-dd")}
-            {"  "}
-            <Link href={`/blog/${p.slug}`} style={{ color: "var(--color-ink-muted)" }}>
-              permalink
-            </Link>
-          </p>
-          <MDXRemote
-            source={p.content}
-            options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
-          />
-        </article>
-      ))}
+
+      <section className="mb-12">
+        <h2 className="text-sm mb-4" style={{ color: "var(--color-ink-muted)" }}>
+          近期博客
+        </h2>
+        <ul className="space-y-2">
+          {recentPosts.map((p) => (
+            <li key={p.slug} className="flex justify-between gap-4">
+              <Link href={`/blog/${p.slug}`} className="flex-1">
+                {p.title}
+              </Link>
+              <span
+                className="font-en text-sm shrink-0"
+                style={{ color: "var(--color-ink-muted)" }}
+              >
+                {format(new Date(p.date), "yyyy.MM.dd")}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <Link href="/blog" className="text-sm mt-4 inline-block" style={{ color: "var(--color-ink-muted)" }}>
+          查看全部 →
+        </Link>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-sm mb-4" style={{ color: "var(--color-ink-muted)" }}>
+          主题页面
+        </h2>
+        <ul className="space-y-1.5">
+          <li><Link href="/works">作品</Link> — 百兽志、Primi、早期项目</li>
+          <li><Link href="/reading">在读</Link> — 最近在看的书</li>
+          <li><Link href="/notes">札记</Link> — 短想法、引用、链接</li>
+          <li><Link href="/about">关于</Link> — 更长的自我介绍</li>
+        </ul>
+      </section>
 
       <Footer />
     </>
