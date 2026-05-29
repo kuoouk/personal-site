@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 };
 
 const navLinks = [
-  { href: "/", label: "首页" },
   { href: "/about", label: "关于" },
   { href: "/blog", label: "写作" },
   { href: "/reading", label: "书单" },
@@ -45,7 +44,7 @@ export default function RootLayout({
             style={{ borderColor: "var(--color-line)" }}
           >
             <div className="md:sticky md:top-16">
-              <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2 md:block">
+              <div className="flex flex-wrap items-baseline gap-x-2 gap-y-2 md:block">
                 <Link href="/" className="no-underline">
                   <h1 className="text-xl" style={{ fontWeight: 500 }}>
                     海峰
