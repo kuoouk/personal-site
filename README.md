@@ -1,6 +1,6 @@
 # 个人站脚手架
 
-参考 [patrickcollison.com](https://patrickcollison.com) 的主题清单式架构，基于 Next.js 15 + MDX + Tailwind v4 搭建。
+基于 Next.js 15 + MDX + Tailwind v4 搭建。
 
 ## 启动
 
@@ -20,7 +20,7 @@ app/
   │   ├── page.tsx          # 博客列表（按年份分组）
   │   └── [slug]/page.tsx   # 博客详情（渲染 MDX）
   ├── notes/page.tsx        # 札记（短想法）
-  ├── works/page.tsx        # 作品（百兽志、Primi）
+  ├── works/page.tsx        # 作品
   ├── reading/page.tsx      # 在读 / 读过 / 想读
   ├── feed.xml/route.ts     # RSS 输出
   ├── layout.tsx            # 全局布局 + 字体加载
@@ -71,13 +71,3 @@ tags: [tag1, tag2]
 3. 在项目设置里绑定域名
 
 `next.config.mjs` 已配置 `output: 'export'`，所以也可以部署到任意静态托管（Cloudflare Pages、Netlify、GitHub Pages）。
-
-## 下一步建议
-
-- 修改 `app/layout.tsx` 里的 `metadataBase` 为你的实际域名
-- 修改 `app/feed.xml/route.ts` 里的 `site` 变量
-- 替换 `app/about/page.tsx` 的内容
-- 在 `app/works/page.tsx` 的 `works` 数组里填入真实链接和截图
-- 想加新主题页（比如 /seasons 节气），就在 `app/` 下新建一个文件夹
-
-设计上有意保持简陋——按 Patrick 的方式，从最朴素的 `<ul>` 开始，等内容长出来再考虑视觉精装。
