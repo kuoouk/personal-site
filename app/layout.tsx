@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s",
   },
   description: "独立开发者，产品设计师。",
-  metadataBase: new URL("https://example.com"),
+  metadataBase: new URL("https://guohaifeng.com"),
 };
 
 const navLinks = [
