@@ -33,12 +33,12 @@ export default function About() {
         <p>
           对以下事情感兴趣：<br/>
           - AI：对生产力的提升<br/>
-          - 商业：组织的构建和经营<br/>
-          - 社区：网络的构建和经营<br/>
-          - 运动：网球、健身、羽毛球<br/>
+          - 商业：组织的构建和激励<br/>
+          - 社区：网络的起点和周期<br/>
           - 心理学：认知、情绪、行为<br/>
-          - 美食：探店、烹饪、品鉴<br/>
-          欢迎coffee chat，对以上任何话题都感兴趣。
+          - 运动：天赋、训练、求胜欲<br/>
+          - 美食：待客之道<br/>
+          欢迎coffee chat。
         </p>
         <p>
           长期招聘<a href="https://www.primilab.com/jobs/" target="_blank" rel="noreferrer">产品经理&工程师</a>。
