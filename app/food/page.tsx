@@ -20,7 +20,16 @@ const restaurants = [
     location: "北京",
     note: "",
   },
-  
+  {
+    name: "崖岐制肉所",
+    location: "北京",
+    note: "",
+  },
+  {
+    name: "梧桐欣雨万州烤鱼",
+    location: "北京",
+    note: "",
+  },
 ];
 
 export default function Food() {
