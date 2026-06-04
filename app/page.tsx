@@ -27,8 +27,8 @@ export default function About() {
         </p>
         <p>
         目前主要focus在两个项目：<br/>
-        - <a href="/works">汽泡/Primi</a>，基于AI抠图的记录和创作社区；<br/>
-        - <a href="/works">动物心情</a>，demo中。<br/>
+        - <a href="/works">汽泡/Primi</a>，基于AI抠图的记录和创作社区<br/>
+        - <a href="/works">动物心情</a>，demo中<br/>
         </p>
         <p>
           对以下事情感兴趣：<br/>
@@ -38,16 +38,16 @@ export default function About() {
           - 心理学：认知、情绪、行为<br/>
           - 运动：天赋、训练、求胜欲<br/>
           - 美食：待客之道<br/>
-          欢迎coffee chat。
+          欢迎coffee chat
         </p>
         <p>
-          长期招聘<a href="https://www.primilab.com/jobs/" target="_blank" rel="noreferrer">产品经理&工程师</a>。
+          长期招聘<a href="https://www.primilab.com/jobs/" target="_blank" rel="noreferrer">产品经理&工程师</a>
         </p>
 
         
 
         <p>
-          邮箱：<a href="mailto:guohaifeng@primilab.com">guohaifeng@primilab.com</a>。<br />
+          邮箱：<a href="mailto:guohaifeng@primilab.com">guohaifeng@primilab.com</a><br />
         </p>
       
       </article>
