@@ -4,10 +4,10 @@ import { getAllPosts } from "@/lib/content";
 export const dynamic = "force-static";
 
 export async function GET() {
-  const site = "https://example.com"; // 改成你的域名
+  const site = "https://guohaifeng.com"; // 改成你的域名
   const feed = new Feed({
-    title: "Michael",
-    description: "独立开发者，产品设计师的博客。",
+    title: "haifeng",
+    description: "building something",
     id: site,
     link: site,
     language: "zh-CN",
