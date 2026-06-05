@@ -27,7 +27,7 @@ export default function About() {
         </p>
         <p>
         目前主要focus在两个项目：<br/>
-        - <a href="/works">汽泡/Primi</a>，基于AI抠图的记录和创作社区<br/>
+        - <a href="/works">汽泡/Micca</a>，基于AI抠图的记录和创作社区<br/>
         - <a href="/works">动物心情</a>，demo中<br/>
         </p>
         <p>
