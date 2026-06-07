@@ -5,6 +5,7 @@ import { getAllPosts } from "@/lib/content";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { format } from "date-fns";
 import remarkGfm from "remark-gfm";
+import { ZoomImage } from "@/components/ZoomImage";
 
 export const metadata = { title: "写作" };
 
@@ -27,6 +28,7 @@ export default function BlogIndex() {
           </p>
           <MDXRemote
             source={p.content}
+            components={{ img: ZoomImage }}
             options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
           />
         </article>
