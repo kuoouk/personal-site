@@ -5,6 +5,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { format } from "date-fns";
 import { notFound } from "next/navigation";
 import remarkGfm from "remark-gfm";
+import { ZoomImage } from "@/components/ZoomImage";
 
 export async function generateStaticParams() {
   return getAllPosts().map((p) => ({ slug: p.slug }));
@@ -32,6 +33,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
         <hr />
         <MDXRemote
           source={post.content}
+          components={{ img: ZoomImage }}
           options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }}
         />
       </article>
