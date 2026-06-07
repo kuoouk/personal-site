@@ -3,7 +3,7 @@
 
 @theme {
   /* 配色：参考百兽志的月光蓝体系，但放在网站语境里 */
-  --color-bg: #F5F4EF;          /* 米白底 */
+  --color-bg: #FAF8F2;          /* 米白底 */
   --color-ink: #2A3640;         /* 主文字（墨蓝） */
   --color-ink-muted: #6B7680;   /* 次级文字 */
   --color-line: #D8D6CE;        /* 分隔线 */
