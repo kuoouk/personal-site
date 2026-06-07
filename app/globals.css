@@ -5,8 +5,8 @@
   /* 配色：参考百兽志的月光蓝体系，但放在网站语境里 */
   --color-bg: #FFFFFF;          /* 白底 */
   --color-ink: #2A3640;         /* 主文字（墨蓝） */
-  --color-ink-muted: #6B7680;   /* 次级文字 */
-  --color-line: #D8D6CE;        /* 分隔线 */
+  --color-ink-muted: #8A8A8A;   /* 次级文字 */
+  --color-line: #EEEEEE;        /* 分隔线 */
   --color-link: #2A3640;        /* 链接默认色 */
   --color-link-hover: #8B5A3C;  /* 悬停（暖棕，类似古书印章） */
 
