@@ -27,7 +27,7 @@ export default function About() {
         </p>
         <p>
         目前主要focus在两个项目：<br/>
-        - <a href="https://www.primilab.com">汽泡/Micca</a>，基于AI抠图的记录和创作社区<br/>
+        - <a href="https://www.primilab.com" target="_blank" rel="noreferrer">汽泡/Micca</a>，基于AI抠图的记录和创作社区<br/>
         - 动物心情，demo中<br/>
         </p>
         <p>
